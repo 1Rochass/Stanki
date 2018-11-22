@@ -1,4 +1,6 @@
-- Сайт витрина о станках.
+- Stanki. Sait about machines.
+
+- Url: Stanki.ru ???
 
 - WP 
 	user: rochass
@@ -10,9 +12,18 @@
 	user: root
 	password: toor
 
-- Установить WP на виртуалку
-
-- Плагины
-	- Витрина 
+- Plugin
+	- Woocommerce
+		- Store setup
+			- Country: Rissia
+			- City: Moscow
+			- Currency: Russian rub
+			- Post code: 101000 
+			- Type of  products: physical 
+		- Payment
+			- Paypal: deny
+		- Shipping: deny
+		- Recommended: deny
+		- Activate: Skip
 	
 		
