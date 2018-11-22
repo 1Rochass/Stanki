@@ -1,0 +1,18 @@
+- Сайт витрина о станках.
+
+- WP 
+	user: rochass
+	password: zurabina10
+	email: r@m.ru
+
+- DB 
+	name: Stanki
+	user: root
+	password: toor
+
+- Установить WP на виртуалку
+
+- Плагины
+	- Витрина 
+	
+		
