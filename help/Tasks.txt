@@ -26,4 +26,4 @@
 		- Recommended: deny
 		- Activate: Skip
 	
-		
+- Create a tema "Stanki"		
