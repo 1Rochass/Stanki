@@ -25,5 +25,8 @@
 		- Shipping: deny
 		- Recommended: deny
 		- Activate: Skip
+
+	- Conditional Widgets
+		For managing widgets
 	
 - Create a tema "Stanki"		

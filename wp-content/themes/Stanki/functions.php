@@ -1,6 +1,6 @@
 <?php
 /**
-* add js ans css bootstrap
+* add js ans css bootstrap and other
 */
 function wpt_register_js() {
     wp_register_script('jquery.bootstrap.min', get_template_directory_uri() . '/js/bootstrap.min.js', 'jquery');
@@ -9,7 +9,9 @@ function wpt_register_js() {
 add_action( 'init', 'wpt_register_js' );
 function wpt_register_css() {
     wp_register_style( 'bootstrap.min', get_template_directory_uri() . '/css/bootstrap.min.css' );
+    wp_register_style( 'my_style', get_template_directory_uri() . '/css/style.css');
     wp_enqueue_style( 'bootstrap.min' );
+    wp_enqueue_style( 'my_style' );
 }
 add_action( 'wp_enqueue_scripts', 'wpt_register_css' );
 
