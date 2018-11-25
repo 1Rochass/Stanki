@@ -15,6 +15,20 @@ function wpt_register_css() {
 }
 add_action( 'wp_enqueue_scripts', 'wpt_register_css' );
 
+/**
+* add rub mark into price
+*/
+add_filter('woocommerce_currency_symbol', 'change_existing_currency_symbol', 10, 2);
+
+function change_existing_currency_symbol( $currency_symbol, $currency ) {
+     switch( $currency ) {
+          case 'RUB': $currency_symbol = ' руб.'; break;
+     }
+     return $currency_symbol;
+}
+
+
+
 
 
 /**
