@@ -27,6 +27,9 @@
 		- Activate: Skip
 
 	- Conditional Widgets
-		For managing widgets
+		- For managing widgets
+
+	- Webcraftic Cyr to Lat reloaded
+		- For cnc url
 	
 - Create a tema "Stanki"		
