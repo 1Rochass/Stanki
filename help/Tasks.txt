@@ -27,9 +27,15 @@
 		- Activate: Skip
 
 	- Conditional Widgets
-		- For managing widgets
+		- For managing widgets.
 
 	- Webcraftic Cyr to Lat reloaded
-		- For cnc url
+		- For cnc url.
 	
+	- YITH WooCommerce Ajax Search
+		- For ajax search.
+
+	- dvanced AJAX Product Filters for WooCommerce
+		- Product price slider filter.
+
 - Create a tema "Stanki"		
