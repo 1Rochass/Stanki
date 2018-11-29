@@ -7,11 +7,13 @@
 	<?php wp_head();  // Это обязательный хук-действие темы. ?> 
 </head>
 <body>
-<h1>Header</h1>
-
+<div class="header-site-branding">
+  
+</div>
+<div class="header-nav">
 <?php
 
-$args = array(
+  $args = array(
   'theme_location' => 'main-menu',
   'menu' => 'main-menu',
   'container' => 'nav',
@@ -28,8 +30,12 @@ $args = array(
   'items_wrap' => '<ul id = "%1$s" class = "%2$s">%3$s</ul>',
   'depth' => 0,
   'walker' => ''
-);
+  );
 
-wp_nav_menu( $args );
+  wp_nav_menu( $args );
 
 ?>
+
+</div>
+
+
