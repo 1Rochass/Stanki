@@ -38,4 +38,7 @@
 	- dvanced AJAX Product Filters for WooCommerce
 		- Product price slider filter.
 
+	- Dropdown Menu Widget 
+		- For menu because in my theme Dropdown Menu does not work.
+
 - Create a tema "Stanki"		

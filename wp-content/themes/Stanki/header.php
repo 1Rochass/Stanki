@@ -11,31 +11,7 @@
   
 </div>
 <div class="header-nav">
-<?php
-
-  $args = array(
-  'theme_location' => 'main-menu',
-  'menu' => 'main-menu',
-  'container' => 'nav',
-  'container_class' => 'menu-{menu-slug}-container',
-  'container_id' => 'main-menu',
-  'menu_class' => '',
-  'menu_id' => 'main-menu',
-  'echo' => true,
-  'fallback_cb' => '__return_empty_string',
-  'before' => '',
-  'after' => '',
-  'link_before' => '',
-  'link_after' => '',
-  'items_wrap' => '<ul id = "%1$s" class = "%2$s">%3$s</ul>',
-  'depth' => 0,
-  'walker' => ''
-  );
-
-  wp_nav_menu( $args );
-
-?>
-
+  <?php shailan_dropdown_menu(); // Dropdown Menu Widget  ?> 
 </div>
 
 

@@ -54,21 +54,19 @@ line-height:1.3;
 }
 .header-nav {
 	height: 54px;
+	background-color: #393939;
 }
 	/* main-menu */
-	#main-menu {
-		height: 54px;
-		background-color: #393939;
-	}
-	#main-menu ul {
+	
+	.shailan-dropdown-menu ul {
 		list-style: none;
 		padding: 0 0 0 30px;
 	}
-	#main-menu li {
+	.shailan-dropdown-menu li {
 		float: left;
 		margin: 0 15px 0 0;
 	}
-	#main-menu ul li a {
+	.shailan-dropdown-menu ul li a {
     color: #fff;
     display: block;
     font-family: "Rajdhani",sans-serif;
@@ -77,8 +75,9 @@ line-height:1.3;
     padding:  15px 26px 0 0;
 	}
 	
+	/* sub-menu */
 
-
+	
 
 /* Main */
 .main {
