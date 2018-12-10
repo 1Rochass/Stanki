@@ -41,17 +41,35 @@ text-align: left;
 line-height:1.3;
 }
 
-/* page_layout - main wrapper */ 
-#page_layout {
-	/*width: 960px;
-	margin: 0 auto;*/
+
+
+/* Layout of page */
+.wrapper {
+	
 }
 
 /* Header*/
-
 .header-site-branding {
 	height: 88px;
+	margin: 10px 0;
 }
+	.logo {
+		float: left;
+		height: 88px;
+		margin: 0 10px;
+	}
+	.logo img {
+		display: block;
+		max-width: 100%;
+		height: auto;
+	}
+	.site-branding {
+		float: right;
+		color: #ff7d06;
+		margin: 0 10px;
+    	font-weight: 700;
+	}
+
 .header-nav {
 	height: 54px;
 	background-color: #393939;
@@ -60,19 +78,20 @@ line-height:1.3;
 	
 	.shailan-dropdown-menu ul {
 		list-style: none;
-		padding: 0 0 0 30px;
 	}
 	.shailan-dropdown-menu li {
 		float: left;
-		margin: 0 15px 0 0;
+		background-color: #393939;
 	}
 	.shailan-dropdown-menu ul li a {
     color: #fff;
-    display: block;
     font-family: "Rajdhani",sans-serif;
     font-size: 18px;
     font-weight: 500;
-    padding:  15px 26px 0 0;
+    height: 54px;
+    margin:  0px 26px 0 0; /* Отступ справа между ссылками */
+    display: table-cell;
+	vertical-align: middle;
 	}
 	
 	/* sub-menu */
