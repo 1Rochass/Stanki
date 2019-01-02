@@ -1,0 +1,14 @@
+2019-01-01T19:07:24+00:00 CRITICAL syntax error, unexpected 'function' (T_FUNCTION) в C:\OSPanel\domains\Stanki\wp-content\themes\Stanki\functions.php на строке 7
+
+2019-01-01T19:07:26+00:00 CRITICAL syntax error, unexpected 'function' (T_FUNCTION) в C:\OSPanel\domains\Stanki\wp-content\themes\Stanki\functions.php на строке 7
+
+2019-01-01T19:07:27+00:00 CRITICAL syntax error, unexpected 'function' (T_FUNCTION) в C:\OSPanel\domains\Stanki\wp-content\themes\Stanki\functions.php на строке 7
+
+2019-01-01T19:08:44+00:00 CRITICAL syntax error, unexpected '&', expecting ']' в C:\OSPanel\domains\Stanki\wp-content\themes\Stanki\functions.php на строке 10
+
+2019-01-01T22:39:56+00:00 CRITICAL syntax error, unexpected end of file в C:\OSPanel\domains\Stanki\wp-content\themes\Stanki\functions.php на строке 120
+
+2019-01-01T22:39:57+00:00 CRITICAL syntax error, unexpected end of file в C:\OSPanel\domains\Stanki\wp-content\themes\Stanki\functions.php на строке 120
+
+2019-01-01T22:39:59+00:00 CRITICAL syntax error, unexpected end of file в C:\OSPanel\domains\Stanki\wp-content\themes\Stanki\functions.php на строке 120
+

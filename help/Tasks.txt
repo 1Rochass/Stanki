@@ -40,5 +40,8 @@
 
 	- Dropdown Menu Widget 
 		- For menu because in my theme Dropdown Menu does not work.
+	
+	- Custom Product Tabs for WooCommerce 
+		- For Product Tabs 
 
 - Create a tema "Stanki"		
