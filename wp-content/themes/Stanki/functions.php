@@ -6,6 +6,10 @@
 /**
 * add js ans css bootstrap and other
 */
+
+
+
+add_action( 'wp_enqueue_scripts', 'my_scripts_method' );
 function wpt_register_js() {
     wp_register_script('jquery.bootstrap.min', get_template_directory_uri() . '/js/bootstrap.min.js', 'jquery');
     wp_enqueue_script('jquery.bootstrap.min');

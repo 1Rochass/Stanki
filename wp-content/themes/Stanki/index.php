@@ -6,7 +6,16 @@
 	</div>
 	<div class="main row no-gutters">
 		<div class="main-content col-md-12">
-			<?php echo do_shortcode('[products]'); ?>
+		<!-- Tokarnye -->
+			<div class="my-titles">		
+				<a href="<?php echo get_site_url() ?>/product-category/tokarnye/">Токарные</a>
+			</div>
+			<?php echo do_shortcode('[product_category per_page="4" category="tokarnye"]'); ?>
+		<!-- Frezernye -->
+			<div class="my-titles">		
+				<a href="<?php echo get_site_url() ?>/product-category/frezernye/">Фрезерные</a>
+			</div>
+			<?php echo do_shortcode('[product_category per_page="4" category="frezernye"]'); ?>
 		</div>
 	</div>
 

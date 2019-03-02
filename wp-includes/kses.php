@@ -1498,7 +1498,7 @@ function wp_kses_decode_entities($string) {
 	return $string;
 }
 
-/**
+/*
  * Regex callback for wp_kses_decode_entities()
  *
  * @since 2.9.0

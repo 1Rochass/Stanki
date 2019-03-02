@@ -43,5 +43,8 @@
 	
 	- Custom Product Tabs for WooCommerce 
 		- For Product Tabs 
+	
+	- WP PHP Console
+		Show errors in browser (you must install PHP Console extension for Google Chrome)
 
 - Create a tema "Stanki"		
