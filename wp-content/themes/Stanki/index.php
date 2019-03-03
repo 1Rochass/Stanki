@@ -18,7 +18,6 @@
 			<?php echo do_shortcode('[product_category per_page="4" category="frezernye"]'); ?>
 		</div>
 	</div>
-
 	<div class="footer">
 		<div class="footer-nav col-md-12">
 			<?php get_footer(); ?>

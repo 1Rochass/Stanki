@@ -14,7 +14,7 @@
   <div class="site-branding">
     <div class="phone">
       <img src="<?php echo get_template_directory_uri(); ?>/img/phone.png" alt="">
-      <span class="">+7 978 ...</span>
+      <span class="">+7 912 89 77 001</span>
     </div>
     <div class="mail">
       <img src="<?php echo get_template_directory_uri(); ?>/img/mail.png" alt="">

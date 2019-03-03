@@ -128,7 +128,8 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 			<?php do_action( 'woocommerce_cart_contents' ); ?>
 
-			<tr>
+			<!-- COUPONS -->
+			<!-- <tr>
 				<td colspan="6" class="actions">
 
 					<?php if ( wc_coupons_enabled() ) { ?>
@@ -144,7 +145,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 					<?php wp_nonce_field( 'woocommerce-cart', 'woocommerce-cart-nonce' ); ?>
 				</td>
-			</tr>
+			</tr> -->
 
 			<?php do_action( 'woocommerce_after_cart_contents' ); ?>
 		</tbody>

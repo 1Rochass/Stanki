@@ -1,0 +1,8 @@
+2019-03-03T11:01:09+00:00 CRITICAL syntax error, unexpected ')' в C:\OSPanel\domains\Stanki\wp-content\themes\Stanki\functions.php на строке 9
+
+2019-03-03T12:02:37+00:00 CRITICAL syntax error, unexpected ')', expecting ',' or ';' в C:\OSPanel\domains\Stanki\wp-content\themes\Stanki\functions.php на строке 17
+
+2019-03-03T12:03:47+00:00 CRITICAL syntax error, unexpected ''>111</a>'' (T_CONSTANT_ENCAPSED_STRING) в C:\OSPanel\domains\Stanki\wp-content\themes\Stanki\functions.php на строке 17
+
+2019-03-03T12:51:35+00:00 CRITICAL syntax error, unexpected '' class="button">Обратн�' (T_CONSTANT_ENCAPSED_STRING) в C:\OSPanel\domains\Stanki\wp-content\themes\Stanki\functions.php на строке 14
+
