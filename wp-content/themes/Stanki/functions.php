@@ -35,7 +35,7 @@ function custom_override_checkout_fields( $fields ) {
   unset($fields['billing']['billing_country']);
   unset($fields['billing']['billing_state']);
   //unset($fields['billing']['billing_phone']);
-  unset($fields['order']['order_comments']);
+  //unset($fields['order']['order_comments']);
   //unset($fields['billing']['billing_email']);
   unset($fields['account']['account_username']);
   unset($fields['account']['account_password']);
@@ -59,7 +59,28 @@ remove_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_coupon_
 // Disable payment
 add_filter( 'woocommerce_cart_needs_payment', '__return_false' );
 
+/**
+* Woocommerce shop loop
+*/
+// Remove the result count from WooCommerce
+remove_action( 'woocommerce_before_shop_loop' , 'woocommerce_result_count', 20 );
+// Remove the sorting dropdown from Woocommerce
+remove_action( 'woocommerce_before_shop_loop' , 'woocommerce_catalog_ordering', 30 );
 
+/**
+* Cut product title
+*/
+remove_action( 'woocommerce_shop_loop_item_title', 'woocommerce_template_loop_product_title', 10 );
+add_action( 'woocommerce_shop_loop_item_title', 'trim_title_chars', 10 );
+
+function trim_title_chars() {
+$count = 45;
+$after = " ...";
+$title = get_the_title();
+if (mb_strlen($title) > $count) $title = mb_substr($title,0,$count);
+else $after = '';
+echo '<h2 class="woocommerce-loop-product__title">' . $title . $after  . '</h2>';
+}
 
 
 /**

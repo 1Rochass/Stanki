@@ -1,105 +1,205 @@
 * {
+
 margin:0;
+
 padding:0;
+
 }
+
 html {
+
   position: relative;
+
   min-height: 100%;
+
 }
+
 h1,h2,h3,h4,h5,h6,p,blockquote,form,label,ul,ol,dl,fieldset,address {
+
 margin:0.5em 0;
+
 }
+
 li,dd {
+
 margin-left:1em;
+
 }
+
 fieldset {
+
 padding:.5em;
+
 }
+
 a {
+
 text-align: left;
+
 text-decoration: none;
+
 color:#999;
+
 }
+
 a:hover {
+
 text-decoration: underline;
+
 color: gray;
+
 }
+
 img {
+
 border: 0px;
+
 }
+
 li {
+
 text-align: left;
+
 }
+
 body {
+
 padding:0;
+
 font-size: 1em;
+
 font-family: Arial,Halvetica,sans-serif;
+
 font-style: normal;
+
 text-align: left;
+
 line-height:1.3;
+
 }
+
+
+
+
 
 
 
 /* Layout of page */
+
 .wrapper {
+
 	
+
 }
+
+
 
 /* Header*/
+
 .header-site-branding {
+
 	height: 88px;
+
 	margin: 10px 0;
+
 }
+
 	.logo {
+
 		float: left;
+
 		height: 88px;
+
 		margin: 0 16px;
+
 	}
+
 	.logo img {
+
 		display: block;
+
 		max-width: 100%;
+
 		height: auto;
+
 	}
+
 	.site-branding {
+
 		float: right;
+
 		color: #ff7d06;
+
 		margin: 0 16px;
+
     	font-weight: 700;
+
 	}
+
+
 
 .header-nav {
+
 	height: 54px;
+
 	background-color: #393939;
+
 }
+
 	/* main-menu */
+
 	
+
 	.shailan-dropdown-menu ul {
+
 		list-style: none;
+
 	}
+
 	.shailan-dropdown-menu li {
+
 		float: left;
+
 		background-color: #393939;
+
 	}
+
 	.shailan-dropdown-menu ul li a {
+
     color: #fff;
+
     font-family: "Rajdhani",sans-serif;
+
     font-size: 18px;
+
     font-weight: 500;
+
     height: 54px;
+
     margin:  0px 26px 0 0; /* Отступ справа между ссылками */
+
     display: table-cell;
+
 	vertical-align: middle;
+
 	}
+
 	
+
 	/* sub-menu */
 
+
+
 	
 
+
+
 /* Main */
+
 .main {
-	padding: 0.8em 15px;
+	padding: 0.8em 6em;
 }
+
 	/* Products */
 	ul.products {
 	    position: relative;
@@ -111,21 +211,33 @@ line-height:1.3;
 	    font-size: 18px;
 	    padding: .8em .8em 1.6em .8em;
 	}
+
 	.my-titles:before, .my-titles:after {
+
 	    content: "";
+
 	    display: inline-block;
+
 	    vertical-align: middle;
+
 	    width: 180px;
+
 	    height: 2px;
+
 	    background-color: #ff7d06;
+
 	    position: relative;
+
 	    box-sizing: inherit;
+
 	}
+
 	/* Product box */
 	.product {
 		border-style: dotted;
     	border-width: 1px;
     	border-color: #ccc;
+    	min-height: 450px;
     	text-align: center;
 	}
 	.product h2 {
@@ -135,23 +247,42 @@ line-height:1.3;
     	font-weight: 500;
     	text-align: center;
 	}
-	.product a span {
+	.woocommerce-loop-product__title {
+		max-height: 65px;
+		overflow: hidden; 
+		padding: .5em .5em !important;
+	}
+	.product a span { 
 		text-align: center;
 	}
+	.price {
+		bottom: 56px;
+		left: 50%;
+	    margin-left: -70px;
+		position: absolute;
+		text-align: center;
+		width: 140px;
+	}
+
 	.woocommerce ul.products li.product .button {
 	    background: #ff7d06 none repeat scroll 0 0;
+	    bottom: 10px;
+	    margin: 0 auto;
 	    color: white;
 	    font-size: 16px;
 	    font-weight: 500;
 	    line-height: 1.5;
-	    margin: 10px auto 15px;
-	    padding: 6px 17px;
-	    width: auto;
+	    left: 50%;
+	    margin-left: -70px;
+	    position: absolute;
 	    border-radius: 27px;
+	    text-align: center;
+	    width: 140px;
 	}
 	.woocommerce ul.products li.product .button:hover {
 	    color: #000000;
 	}
+
 	/* Single product box */
 	.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
 	    background: #ff7d06 none repeat scroll 0 0;
@@ -164,69 +295,122 @@ line-height:1.3;
 	    width: auto;
 	    border-radius: 27px;
 	}
-	    
 
+	    
 	/* Sidebar */
-	
+
 	/* YITH WooCommerce Ajax Search */
+
 	/*.yith-s { 
+
 		display: block;
+
 		max-width: 100%;
+
 		height: auto;
+
 	}*/
+
 	/*.product_list_widget {
+
 		list-style: none;
+
 	}
+
 	.product_list_widget li {
+
 		margin: 0 0 10px 0;
+
 		border: 1px dotted gray;
+
 	}
+
 	.product_list_widget li a img {  like bootstrap  .img-responsive 
+
 		display: block;
+
 		max-width: 100%;
+
 		height: auto;
+
 	}
+
 	.product-title {
+
 		text-align: center;
+
 		width: 100%;
+
 		float: left;
+
 	}
+
 	.woocommerce-Price-amount {
+
 		text-align: center;
+
 		max-width: 100%;
+
 		display: block;
+
 		height: auto;
+
 	}*/
+
+
 
 /* Footer */
+
 .footer {
+
 	position: absolute;
+
 	
+
   	bottom: 0;
+
   	width: 100%;
+
   	/* Set the fixed height of the footer here */
+
 	height: 54px;
+
 	background-color: #393939;
+
 }
 
+
+
 	.footer-nav {
+
 		color: #fff;
+
 	    display: block;
+
 	    font-family: "Rajdhani",sans-serif;
+
 	    font-size: 18px;
+
 	    font-weight: 500;
+
 	    padding-top: 15px;
+
 	}
+
 		.footer  a {
+
 			color: #fff;
+
 		}
+
+
+
 
 
 /* cart.php */
 .cart_totals {
 	padding-bottom: 54px; /* For footer in bottom*/
 }
-
 .woocommerce-cart-form__cart-item img {
 	width: 100px;
 	height: 100px;
@@ -245,4 +429,12 @@ line-height:1.3;
 }
 #billing_email { /* input name */
 	width: 300px;
+}
+.col-2 {
+	float: left !important;
+	margin: 0 20px 0 50%;
+}
+#order_comments {
+	width: 300px;
+	height: 200px;
 }
