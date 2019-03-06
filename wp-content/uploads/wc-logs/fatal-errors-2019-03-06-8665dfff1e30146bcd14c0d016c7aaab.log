@@ -1,0 +1,4 @@
+2019-03-06T18:19:25+00:00 CRITICAL syntax error, unexpected '}', expecting ',' or ';' в C:\OSPanel\domains\stanki\wp-content\themes\Stanki\functions.php на строке 32
+
+2019-03-06T18:21:15+00:00 CRITICAL syntax error, unexpected end of file в C:\OSPanel\domains\stanki\wp-content\themes\Stanki\functions.php на строке 177
+

@@ -1,6 +1,6 @@
 <?php
 
-/**
+/** 
 * Remove cart from single product
 */
 // remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
@@ -25,6 +25,11 @@ function wc_remove_all_quantity_fields( $return, $product ) {
     return true;
 }
 add_filter( 'woocommerce_is_sold_individually', 'wc_remove_all_quantity_fields', 10, 2 );
+// My title
+add_action('woocommerce_single_product_summary', 'add_my_title', 9);
+function add_my_title(){
+  echo "" . the_title('<h3 class="post-title">', '</h3>', 1); 
+}
 
 /**
 * Checkout

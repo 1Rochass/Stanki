@@ -191,6 +191,10 @@ body {
 	}
 
 	/* Single product box */
+	.post-title {
+		text-align: left;
+		padding-right: .5em;
+	} 
 	.single-product .price {
 		bottom: 0px;
 		left: 0%;
@@ -238,6 +242,7 @@ body {
 	.related {
 		background: #ebe9eb;
 		margin: 5em 0 0 0;
+		padding: .5em .5em .5em .7em;
 	}
 	.related h2 {
 		padding: 1em 0 1em 0;
@@ -371,6 +376,11 @@ body {
 }
 #place_order {
 	background-color: #ff7d06!important;
+}
+
+/* Order is accepted */
+address {
+	padding-bottom: 54px!important;
 }
 
 /* Contacts */

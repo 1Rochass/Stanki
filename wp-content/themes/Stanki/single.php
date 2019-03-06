@@ -9,7 +9,7 @@
   <div class="main row no-gutters">
     <div class="main-content col-md-12">
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-        <h1 class="post-title"><?php the_title(); ?></h1>
+        
         <div class="post-text"><?php the_content(); ?></div>
         <?php comments_template(); ?>
         <?php endwhile; ?>

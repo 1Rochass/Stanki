@@ -28,10 +28,10 @@ else {
 	define('DB_NAME', 'a0276910_stanki');
 
 	/** Имя пользователя MySQL */
-	define('DB_USER', 'root');
+	define('DB_USER', 'a0276910_stanki');
 
 	/** Пароль к базе данных MySQL */
-	define('DB_PASSWORD', 'toor');
+	define('DB_PASSWORD', 'zurabina10');
 
 	/** Имя сервера MySQL */
 	define('DB_HOST', 'localhost');

@@ -16,6 +16,31 @@
 				<a href="<?php echo get_site_url() ?>/product-category/frezernye/">Фрезерные</a>
 			</div>
 			<?php echo do_shortcode('[product_category per_page="4" category="frezernye"]'); ?>
+		<!-- sverlilnye-i-rastochnye -->
+			<div class="my-titles">		
+				<a href="<?php echo get_site_url() ?>/product-category/sverlilnye-i-rastochnye/">Сверлильные и расточные</a>
+			</div>
+			<?php echo do_shortcode('[product_category per_page="4" category="sverlilnye-i-rastochnye"]'); ?>
+		<!-- pressy -->
+			<div class="my-titles">		
+				<a href="<?php echo get_site_url() ?>/product-category/pressy/">Прессы</a>
+			</div>
+			<?php echo do_shortcode('[product_category per_page="4" category="pressy"]'); ?>
+		<!-- strogalnye -->
+			<div class="my-titles">		
+				<a href="<?php echo get_site_url() ?>/product-category/strogalnye/">Строгальные</a>
+			</div>
+			<?php echo do_shortcode('[product_category per_page="4" category="strogalnye"]'); ?>
+		<!-- shlifovalnye -->
+			<div class="my-titles">		
+				<a href="<?php echo get_site_url() ?>/product-category/shlifovalnye/">Шлифовальные</a>
+			</div>
+			<?php echo do_shortcode('[product_category per_page="4" category="shlifovalnye"]'); ?>
+		<!-- pilnye -->
+			<div class="my-titles">		
+				<a href="<?php echo get_site_url() ?>/product-category/pilnye/">Пильные</a>
+			</div>
+			<?php echo do_shortcode('[product_category per_page="4" category="pilnye"]'); ?>
 		</div>
 	</div>
 	<div class="footer">
