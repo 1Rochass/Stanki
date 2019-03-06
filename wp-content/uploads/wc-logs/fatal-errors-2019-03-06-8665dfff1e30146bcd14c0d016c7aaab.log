@@ -2,3 +2,11 @@
 
 2019-03-06T18:21:15+00:00 CRITICAL syntax error, unexpected end of file в C:\OSPanel\domains\stanki\wp-content\themes\Stanki\functions.php на строке 177
 
+2019-03-06T22:43:43+00:00 CRITICAL Call to undefined function wp_pagenavi() в C:\OSPanel\domains\stanki\wp-content\themes\Stanki\page.php на строке 18
+
+2019-03-06T22:43:47+00:00 CRITICAL Call to undefined function wp_pagenavi() в C:\OSPanel\domains\stanki\wp-content\themes\Stanki\page.php на строке 18
+
+2019-03-06T22:43:52+00:00 CRITICAL Call to undefined function wp_pagenavi() в C:\OSPanel\domains\stanki\wp-content\themes\Stanki\page.php на строке 18
+
+2019-03-06T22:43:56+00:00 CRITICAL Call to undefined function wp_pagenavi() в C:\OSPanel\domains\stanki\wp-content\themes\Stanki\page.php на строке 18
+

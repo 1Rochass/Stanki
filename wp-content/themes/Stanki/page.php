@@ -13,10 +13,9 @@
       <h1 class="post-title"><?php the_title(); ?></h1>
       <div class="post-text"><?php the_content(); ?></div>
       <?php endwhile; ?>
-
       <?php else: ?>
-
     <?php endif; ?>
+    <?php wp_pagenavi(); ?>
     </div>
   </div>
 
