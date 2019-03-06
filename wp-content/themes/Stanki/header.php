@@ -18,7 +18,7 @@
     </div>
     <div class="mail">
       <img src="<?php echo get_template_directory_uri(); ?>/img/mail.png" alt="">
-      <span class="">grex@moon.com</span>
+      <span class="">8977001@bk.ru</span>
     </div>
   </div>
 </div>

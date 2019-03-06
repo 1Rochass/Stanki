@@ -47,4 +47,22 @@
 	- WP PHP Console
 		Show errors in browser (you must install PHP Console extension for Google Chrome)
 
-- Create a tema "Stanki"		
+- Create a tema "Stanki"	
+
+
+
+05.03.2019
+ + цвет кнопок в корзину везде оранж и оформиь заказ
+ + ƒобавить в title товара 5 букв 30 + 5 	
+ + ѕоправить цену single product она в самом низу
+ + в single product убрать кол-во товаров
+ - сделать название товара в single product как в st-ok.ru
+ + вкладки в single product описание, тех. характер. сделать не по середине. а слева
+ + похожие товара чуть ниже
+ + категории в single product левее
+ - в контактах добавить раздел - напишите нам
+ - посмореть как устроен прайс лист на st-ok.ru
+ + настройка отображение текста в tabs в таблице
+
+06.03.2019
+ - favicon.ico

@@ -17,6 +17,14 @@
 // 		echo do_shortcode('<a href="" class="button">Обратный звонок</a>');
 // 	}
 
+/**
+* Cart
+*/
+// Remove in all product type
+function wc_remove_all_quantity_fields( $return, $product ) {
+    return true;
+}
+add_filter( 'woocommerce_is_sold_individually', 'wc_remove_all_quantity_fields', 10, 2 );
 
 /**
 * Checkout
@@ -74,13 +82,68 @@ remove_action( 'woocommerce_shop_loop_item_title', 'woocommerce_template_loop_pr
 add_action( 'woocommerce_shop_loop_item_title', 'trim_title_chars', 10 );
 
 function trim_title_chars() {
-$count = 45;
+$count = 47;
 $after = " ...";
 $title = get_the_title();
 if (mb_strlen($title) > $count) $title = mb_substr($title,0,$count);
 else $after = '';
 echo '<h2 class="woocommerce-loop-product__title">' . $title . $after  . '</h2>';
 }
+
+/**
+* Remove standart gallery style
+*/
+remove_action( 'wc_get_gallery_image_html', '__return_false' );
+
+/**
+* Feedback in contacts
+*/
+function myform_action_callback() {
+global $wpdb;
+global $mail;
+$nonce=$_POST['nonce'];
+$rtr='';
+if (!wp_verify_nonce( $nonce, 'myform_action-nonce'))wp_die('{"error":"Error. Spam"}');
+$message="";
+$to="vash_mail@help-wp.ru"; // заменить на свою почту
+$headers = "Content-type: text/html; charset=utf-8 \r\n";
+$headers.= "From: info@mail.ru \r\n"; // заменить на другой ящик
+$subject="Сообщение с сайта ".$_SERVER['SERVER_NAME'];
+do_action('plugins_loaded'); // не обязательно включать в новых ВП, возможно потребуется отключить
+if (!empty($_POST['name']) && !empty($_POST['mess']) && !empty($_POST['email'])){
+$message.="Имя: ".$_POST['name'];
+$message.="<br/>E-mail: ".$_POST['email'];
+$message.="<br/>Сообщение:<br/>".nl2br($_POST['mess']);
+if(wp_mail($to, $subject, $message, $headers)){
+$rtr='{"work":"Сообщение отправлено!","error":""}';
+}else{
+$rtr='{"error":"Ошибка сервера."}';
+}
+}else{
+$rtr='{"error":"Все поля обязательны к заполнению!"}';
+}
+echo $rtr;
+exit;
+}
+add_action('wp_ajax_nopriv_myform_send_action', 'myform_action_callback');
+add_action('wp_ajax_myform_send_action', 'myform_action_callback');
+function myform_stylesheet(){
+wp_enqueue_style("myform_style_templ",get_bloginfo('stylesheet_directory')."/css/styleform.css","0.1.2",true);
+wp_enqueue_script("myform_script_temp",get_bloginfo('stylesheet_directory')."/js/scriptform.js",array('jquery'),"0.1.2",true);
+wp_localize_script("myform_script_temp", "myform_Ajax", array( 'ajaxurl' => admin_url( 'admin-ajax.php' ), 'nonce' => wp_create_nonce('myform_action-nonce') ) );
+}
+add_action( 'wp_enqueue_scripts', 'myform_stylesheet' );
+function formZak() {
+$rty='<div class="form">';
+$rty.='<div class="line"><input id="name" type="text" placeholder="Имя"/></div>';
+$rty.='<div class="line"><input id="email" type="text" placeholder="Почта"/></div>';
+$rty.='<div class="line"><textarea id="mess" placeholder="Сообщение"></textarea></div>';
+$rty.='<div class="line"><input type="submit" onclick="myform_ajax_send(\'#name\',\'#email\',\'#mess\'); return false;" value="Отправить"/></div>';
+$rty.='</div>';
+return $rty;
+}
+add_shortcode( 'formZak', 'formZak' );
+
 
 
 /**
