@@ -20,26 +20,31 @@
 
 // ** Параметры MySQL: Эту информацию можно получить у вашего хостинг-провайдера ** //
 /** Имя базы данных для WordPress */
-define('DB_NAME', 'a0276910_stanki');
+if ( file_exists( dirname( __FILE__ ) . '/wp-config-local.php' ) ) {
+	include( dirname( __FILE__ ) . '/wp-config-local.php' );
+}
+else {
 
-/** Имя пользователя MySQL */
-define('DB_USER', 'root');
+	define('DB_NAME', 'a0276910_stanki');
 
-/** Пароль к базе данных MySQL */
-define('DB_PASSWORD', 'toor');
+	/** Имя пользователя MySQL */
+	define('DB_USER', 'root');
 
-/** Имя сервера MySQL */
-define('DB_HOST', 'localhost');
+	/** Пароль к базе данных MySQL */
+	define('DB_PASSWORD', 'toor');
 
-/** Кодировка базы данных для создания таблиц. */
-define('DB_CHARSET', 'utf8mb4');
+	/** Имя сервера MySQL */
+	define('DB_HOST', 'localhost');
 
-/** Схема сопоставления. Не меняйте, если не уверены. */
-define('DB_COLLATE', '');
+	/** Кодировка базы данных для создания таблиц. */
+	define('DB_CHARSET', 'utf8mb4');
 
-/** Язык */
-define('WPLANG', 'ru_RU'); 
+	/** Схема сопоставления. Не меняйте, если не уверены. */
+	define('DB_COLLATE', '');
 
+	/** Язык */
+	define('WPLANG', 'ru_RU'); 
+}
 /**#@+
  * Уникальные ключи и соли для аутентификации.
  *
