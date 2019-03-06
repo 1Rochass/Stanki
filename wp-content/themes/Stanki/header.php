@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="shortcut icon" type="image/x-icon" href="<?php echo bloginfo('url'); ?>/favicon.ico">
 	<meta charset="<?php bloginfo('charset'); // Устанавливает кодировку. ?>">
 	<title><?php echo wp_get_document_title(); // Возвращает title документа. ?></title>
   <link href="<?php bloginfo('stylesheet_url'); // Подключаем стили css?>" rel="stylesheet" type="text/css" /> 
@@ -24,6 +25,11 @@
 </div>
 <div class="header-nav">
   <?php shailan_dropdown_menu(); // Dropdown Menu Widget  ?> 
+  <div class="my-cart">
+    <a href="http://stanki-met.ru/cart/">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/Cartred.png" alt="">
+    </a>
+  </div>
 </div>
 
 
