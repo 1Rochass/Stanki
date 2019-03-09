@@ -144,7 +144,8 @@ body {
 		border-style: dotted;
     	border-width: 1px;
     	border-color: #ccc;
-    	min-height: 450px;
+    	min-height: 470px;
+
     	text-align: center;
 	}
 	.product h2 {

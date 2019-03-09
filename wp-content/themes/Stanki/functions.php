@@ -1,27 +1,36 @@
 <?php
 /*
-* Pagination
+* Breadcrumb
 */
-function wp_corenavi() {
-  global $wp_query;
-  $pages = '';
-  $max = $wp_query->max_num_pages;
-  if (!$current = get_query_var('paged')) $current = 1;
-  $a['base'] = str_replace(999999999, '%#%', get_pagenum_link(999999999));
-  $a['total'] = $max;
-  $a['current'] = $current;
+function woocommerce_breadcrumb( $args = array() ) {
+  $args = wp_parse_args( $args, apply_filters( 'woocommerce_breadcrumb_defaults', array(
+    'delimiter'   => ' / ',
+    'wrap_before' => '',
+    'wrap_after'  => '',
+    'before'      => '',
+    'after'       => '',
+    'home'        => _x( 'Станки в наличии', 'breadcrumb', 'woocommerce' ),
+  ) ) );
 
-  $total = 1; //1 - выводить текст "Страница N из N", 0 - не выводить
-  $a['mid_size'] = 3; //сколько ссылок показывать слева и справа от текущей
-  $a['end_size'] = 1; //сколько ссылок показывать в начале и в конце
-  $a['prev_text'] = '&laquo;'; //текст ссылки "Предыдущая страница"
-  $a['next_text'] = '&raquo;'; //текст ссылки "Следующая страница"
+  $breadcrumbs = new WC_Breadcrumb();
 
-  if ($max > 1) echo '<div class="navigation">';
-  if ($total == 1 && $max > 1) $pages = ''."\r\n";
-  echo $pages . paginate_links($a);
-  if ($max > 1) echo '</div>';
-}
+  if ( ! empty( $args['home'] ) ) {
+    $breadcrumbs->add_crumb( $args['home'], apply_filters( 'woocommerce_breadcrumb_home_url', home_url() ) );
+  }
+
+  $args['breadcrumb'] = $breadcrumbs->generate();
+
+  /**
+   * @hooked WC_Structured_Data::generate_breadcrumblist_data() - 10
+   */
+  do_action( 'woocommerce_breadcrumb', $breadcrumbs, $args );
+
+  wc_get_template( 'global/breadcrumb.php', $args );
+} 
+
+
+
+
 
 /** 
 * Remove cart from single product
