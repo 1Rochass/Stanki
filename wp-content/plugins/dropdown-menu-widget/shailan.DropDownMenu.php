@@ -49,7 +49,7 @@ class shailan_DropdownWidget extends WP_Widget {
 		require_once("shailan-dropdown-menu-options.php");
 		$this->options = $options;
 		$this->settings = $this->get_plugin_settings();
-
+ 
 		$this->widget_defaults = array(
 			'title' => '',
 			'type' => 'pages',

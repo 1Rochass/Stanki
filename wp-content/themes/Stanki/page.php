@@ -10,56 +10,62 @@
     </div> -->
     <div class="main-content col-md-12">
 
+
     <!-- If page == Main page -->
-    <?php if (is_page('Станки в наличии')): ?>
+    <?php if (is_page('Станки в наличии') || is_home()): 
 
-      <!-- Tokarnye -->
-      <div class="my-titles">   
-        <a href="<?php echo get_site_url() ?>/product-category/tokarnye/">Токарные</a>
-      </div>
-      <?php echo do_shortcode('[product_category per_page="99" category="tokarnye"]'); ?>
-    <!-- Frezernye -->
-      <div class="my-titles">   
-        <a href="<?php echo get_site_url() ?>/product-category/frezernye/">Фрезерные</a>
-      </div>
-      <?php echo do_shortcode('[product_category per_page="99" category="frezernye"]'); ?>
-    <!-- sverlilnye-i-rastochnye -->
-      <div class="my-titles">   
-        <a href="<?php echo get_site_url() ?>/product-category/sverlilnye-i-rastochnye/">Сверлильные и расточные</a>
-      </div>
-      <?php echo do_shortcode('[product_category per_page="99" category="sverlilnye-i-rastochnye"]'); ?>
-    <!-- pressy -->
-      <div class="my-titles">   
-        <a href="<?php echo get_site_url() ?>/product-category/pressy/">Прессы</a>
-      </div>
-      <?php echo do_shortcode('[product_category per_page="99" category="pressy"]'); ?>
-    <!-- strogalnye -->
-      <div class="my-titles">   
-        <a href="<?php echo get_site_url() ?>/product-category/strogalnye/">Строгальные</a>
-      </div>
-      <?php echo do_shortcode('[product_category per_page="99" category="strogalnye"]'); ?>
-    <!-- shlifovalnye -->
-      <div class="my-titles">   
-        <a href="<?php echo get_site_url() ?>/product-category/shlifovalnye/">Шлифовальные</a>
-      </div>
-      <?php echo do_shortcode('[product_category per_page="99" category="shlifovalnye"]'); ?>
-    <!-- pilnye -->
-      <div class="my-titles">   
-        <a href="<?php echo get_site_url() ?>/product-category/pilnye/">Пильные</a>
-      </div>
-      <?php echo do_shortcode('[product_category per_page="99" category="pilnye"]'); ?>
+      // Need for WP 
+      global $wpdb; 
+    // Get categories
+      $categories = $wpdb->get_results("
+        SELECT * FROM wp_terms
+        join wp_termmeta
+        on wp_terms.term_id = wp_termmeta.term_id
+        WHERE wp_termmeta.meta_value > 0 ORDER BY wp_termmeta.meta_value DESC
+      ");
 
+    // Multisort array
+      function array_sort_by_column(&$arr, $col, $dir = SORT_DESC) {
+          $sort_col = array();
+          foreach ($arr as $key=> $row) {
+              $sort_col[$key] = $row->$col;
+          }
+
+          array_multisort($sort_col, $dir, $arr);
+      }
+      array_sort_by_column($categories, 'meta_value');
+
+
+    // Show categories
+      foreach ($categories as $value) {
+        echo '<div class="my-titles">   
+          <a href="<?php echo get_site_url() ?>/product-category/' . $value->slug . '/">' . $value->name . '</a>
+        </div>';
+
+        echo do_shortcode('[product_category per_page="99" category="'. $value->slug .'" orderby="meta_value"]'); 
+      }
     
-    <?php else: // is_page?> 
+    else: // is_page?> 
+
+
 
     <!-- The Loop -->
-      <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+    <?$loop = new WP_Query( array(
+      'post_type' => 'product',  // указываем, что выводить нужно именно товары
+      'posts_per_page' => 4, // количество товаров для отображения
+      'orderby' => 'date', // тип сортировки (в данном случае по дате)
+      'product_cat' => 'tokarnye', // указываем слаг нужной категории
+    ));
+?>
+
+      <?php if ( have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
         <h1 class="post-title"><?php the_title(); ?></h1>
         <div class="post-text"><?php the_content(); ?></div>
+        <div class=""><?php $product->get_price_html(); ?></div>
         <?php endwhile; ?>
         <?php else: ?>
       <?php endif; ?>
-      <?php wp_pagenavi(); ?>
+      
 
     <?php endif; // is_page?>
 

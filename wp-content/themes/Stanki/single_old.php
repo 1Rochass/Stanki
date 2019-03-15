@@ -8,7 +8,8 @@
   <!-- Main -->
   <div class="main row no-gutters">
     <div class="main-content col-md-12">
-    
+    <!-- Breadcrumbs -->
+    <?php woocommerce_breadcrumb(); ?>
 
 
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

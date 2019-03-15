@@ -47,6 +47,14 @@
 	- WP PHP Console
 		Show errors in browser (you must install PHP Console extension for Google Chrome)
 
+	- WooSwipe
+		Gallery plugin for products
+	
+	- Contact Form 7
+		For feedback
+
+
+
 - Create a tema "Stanki"	
 
 
@@ -69,6 +77,6 @@
  + похожие товары добавить padding
  + Прайс лист в меню удалить
  - оптимиизировать для телефона
- - добавить в Tasks.txt все плагины
+ + добавить в Tasks.txt все плагины
  + добавить оставшиеся товары
- - добавить пагинацию
+ + добавить пагинацию

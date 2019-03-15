@@ -1,5 +1,27 @@
 <?php
 /*
+* Delete html {margin-top: 32px!important}
+*/
+function remove_admin_login_header() {
+    remove_action('wp_head', '_admin_bar_bump_cb');
+}
+add_action('get_header', 'remove_admin_login_header');
+
+/**
+* Email from
+*/
+add_filter( 'wp_mail_from', 'hg_mail_from');
+add_filter( 'wp_mail_from_name', 'hg_mail_from_name');
+function hg_mail_from($from_email){
+  $from_email = 'rochass@mai.ru';
+  return $from_email;
+}
+function hg_mail_from_name($from_name){
+  $from_name = 'Alex';
+  return $from_name;
+}
+
+/*
 * Breadcrumb
 */
 function woocommerce_breadcrumb( $args = array() ) {
@@ -140,6 +162,17 @@ function wpt_register_js() {
     wp_enqueue_script('jquery.bootstrap.min');
 }
 add_action( 'init', 'wpt_register_js' );
+// Recent jquery
+// add_action( 'init', 'true_jquery_register' ); 
+// function true_jquery_register() {
+//   if ( !is_admin() ) {
+//     wp_deregister_script( 'jquery' );
+//     wp_register_script( 'jquery', ( 'http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js' ), false, null, true );
+//     wp_enqueue_script( 'jquery' );
+//   }
+// }
+
+
 function wpt_register_css() {
     wp_register_style( 'bootstrap.min', get_template_directory_uri() . '/css/bootstrap.min.css' );
     wp_register_style( 'my_style', get_template_directory_uri() . '/css/style.css');

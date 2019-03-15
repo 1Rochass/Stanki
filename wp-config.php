@@ -28,10 +28,10 @@ else {
 	define('DB_NAME', 'a0276910_stanki');
 
 	/** Имя пользователя MySQL */
-	define('DB_USER', 'root');
+	define('DB_USER', 'a0276910_stanki');
 
 	/** Пароль к базе данных MySQL */
-	define('DB_PASSWORD', '');
+	define('DB_PASSWORD', 'zurabina10');
 
 	/** Имя сервера MySQL */
 	define('DB_HOST', 'localhost');
@@ -84,7 +84,10 @@ $table_prefix  = 'wp_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define('WP_DEBUG', false);
+// Включаем debug для локальной среды разработки
+define('WP_DEBUG', true);
+define('JETPACK_DEV_DEBUG', true);
+define('CONCATENATE_SCRIPTS', false);
 
 /* Это всё, дальше не редактируем. Успехов! */
 

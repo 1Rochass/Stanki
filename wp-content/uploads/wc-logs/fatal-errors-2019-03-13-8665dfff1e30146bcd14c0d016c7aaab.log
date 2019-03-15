@@ -1,0 +1,63 @@
+2019-03-13T19:45:27+00:00 CRITICAL Uncaught exception 'Exception' with message 'Unable to set PHP Console server cookie' in C:\OSPanel\domains\stanki\wp-content\plugins\wp-php-console\vendor\php-console\php-console\src\PhpConsole\Connector.php:165
+Stack trace:
+#0 C:\OSPanel\domains\stanki\wp-content\plugins\wp-php-console\vendor\php-console\php-console\src\PhpConsole\Connector.php(121): PhpConsole\Connector->initServerCookie()
+#1 C:\OSPanel\domains\stanki\wp-content\plugins\wp-php-console\vendor\php-console\php-console\src\PhpConsole\Connector.php(97): PhpConsole\Connector->initConnection()
+#2 C:\OSPanel\domains\stanki\wp-content\plugins\wp-php-console\vendor\php-console\php-console\src\PhpConsole\Connector.php(68): PhpConsole\Connector->__construct()
+#3 C:\OSPanel\domains\stanki\wp-content\plugins\wp-php-console\includes\class-wp-php-console.php(145): PhpConsole\Connector::getInstance()
+#4 [internal function]: WP_PHP_Console\Plugin->connect('')
+#5 C:\OSPanel\domains\stanki\wp-includes\class-wp-hook.php(286): call_user_func_array(Array, Array) в C:\OSPanel\domains\stanki\wp-content\plugins\wp-php-console\vendor\php-console\php-console\src\PhpConsole\Connector.php на строке 165
+
+2019-03-13T19:47:07+00:00 CRITICAL Uncaught exception 'Exception' with message 'Unable to set PHP Console server cookie' in C:\OSPanel\domains\stanki\wp-content\plugins\wp-php-console\vendor\php-console\php-console\src\PhpConsole\Connector.php:165
+Stack trace:
+#0 C:\OSPanel\domains\stanki\wp-content\plugins\wp-php-console\vendor\php-console\php-console\src\PhpConsole\Connector.php(121): PhpConsole\Connector->initServerCookie()
+#1 C:\OSPanel\domains\stanki\wp-content\plugins\wp-php-console\vendor\php-console\php-console\src\PhpConsole\Connector.php(97): PhpConsole\Connector->initConnection()
+#2 C:\OSPanel\domains\stanki\wp-content\plugins\wp-php-console\vendor\php-console\php-console\src\PhpConsole\Connector.php(68): PhpConsole\Connector->__construct()
+#3 C:\OSPanel\domains\stanki\wp-content\plugins\wp-php-console\includes\class-wp-php-console.php(145): PhpConsole\Connector::getInstance()
+#4 [internal function]: WP_PHP_Console\Plugin->connect('')
+#5 C:\OSPanel\domains\stanki\wp-includes\class-wp-hook.php(286): call_user_func_array(Array, Array) в C:\OSPanel\domains\stanki\wp-content\plugins\wp-php-console\vendor\php-console\php-console\src\PhpConsole\Connector.php на строке 165
+
+2019-03-13T19:54:12+00:00 CRITICAL Uncaught exception 'Exception' with message 'Unable to set PHP Console server cookie' in C:\OSPanel\domains\stanki\wp-content\plugins\wp-php-console\vendor\php-console\php-console\src\PhpConsole\Connector.php:165
+Stack trace:
+#0 C:\OSPanel\domains\stanki\wp-content\plugins\wp-php-console\vendor\php-console\php-console\src\PhpConsole\Connector.php(121): PhpConsole\Connector->initServerCookie()
+#1 C:\OSPanel\domains\stanki\wp-content\plugins\wp-php-console\vendor\php-console\php-console\src\PhpConsole\Connector.php(97): PhpConsole\Connector->initConnection()
+#2 C:\OSPanel\domains\stanki\wp-content\plugins\wp-php-console\vendor\php-console\php-console\src\PhpConsole\Connector.php(68): PhpConsole\Connector->__construct()
+#3 C:\OSPanel\domains\stanki\wp-content\plugins\wp-php-console\includes\class-wp-php-console.php(145): PhpConsole\Connector::getInstance()
+#4 [internal function]: WP_PHP_Console\Plugin->connect('')
+#5 C:\OSPanel\domains\stanki\wp-includes\class-wp-hook.php(286): call_user_func_array(Array, Array) в C:\OSPanel\domains\stanki\wp-content\plugins\wp-php-console\vendor\php-console\php-console\src\PhpConsole\Connector.php на строке 165
+
+2019-03-13T19:55:43+00:00 CRITICAL Uncaught exception 'Exception' with message 'Unable to set PHP Console server cookie' in C:\OSPanel\domains\stanki\wp-content\plugins\wp-php-console\vendor\php-console\php-console\src\PhpConsole\Connector.php:165
+Stack trace:
+#0 C:\OSPanel\domains\stanki\wp-content\plugins\wp-php-console\vendor\php-console\php-console\src\PhpConsole\Connector.php(121): PhpConsole\Connector->initServerCookie()
+#1 C:\OSPanel\domains\stanki\wp-content\plugins\wp-php-console\vendor\php-console\php-console\src\PhpConsole\Connector.php(97): PhpConsole\Connector->initConnection()
+#2 C:\OSPanel\domains\stanki\wp-content\plugins\wp-php-console\vendor\php-console\php-console\src\PhpConsole\Connector.php(68): PhpConsole\Connector->__construct()
+#3 C:\OSPanel\domains\stanki\wp-content\plugins\wp-php-console\includes\class-wp-php-console.php(145): PhpConsole\Connector::getInstance()
+#4 [internal function]: WP_PHP_Console\Plugin->connect('')
+#5 C:\OSPanel\domains\stanki\wp-includes\class-wp-hook.php(286): call_user_func_array(Array, Array) в C:\OSPanel\domains\stanki\wp-content\plugins\wp-php-console\vendor\php-console\php-console\src\PhpConsole\Connector.php на строке 165
+
+2019-03-13T19:56:44+00:00 CRITICAL Uncaught exception 'Exception' with message 'Unable to set PHP Console server cookie' in C:\OSPanel\domains\stanki\wp-content\plugins\wp-php-console\vendor\php-console\php-console\src\PhpConsole\Connector.php:165
+Stack trace:
+#0 C:\OSPanel\domains\stanki\wp-content\plugins\wp-php-console\vendor\php-console\php-console\src\PhpConsole\Connector.php(121): PhpConsole\Connector->initServerCookie()
+#1 C:\OSPanel\domains\stanki\wp-content\plugins\wp-php-console\vendor\php-console\php-console\src\PhpConsole\Connector.php(97): PhpConsole\Connector->initConnection()
+#2 C:\OSPanel\domains\stanki\wp-content\plugins\wp-php-console\vendor\php-console\php-console\src\PhpConsole\Connector.php(68): PhpConsole\Connector->__construct()
+#3 C:\OSPanel\domains\stanki\wp-content\plugins\wp-php-console\includes\class-wp-php-console.php(145): PhpConsole\Connector::getInstance()
+#4 [internal function]: WP_PHP_Console\Plugin->connect('')
+#5 C:\OSPanel\domains\stanki\wp-includes\class-wp-hook.php(286): call_user_func_array(Array, Array) в C:\OSPanel\domains\stanki\wp-content\plugins\wp-php-console\vendor\php-console\php-console\src\PhpConsole\Connector.php на строке 165
+
+2019-03-13T19:57:47+00:00 CRITICAL Uncaught exception 'Exception' with message 'Unable to set PHP Console server cookie' in C:\OSPanel\domains\stanki\wp-content\plugins\wp-php-console\vendor\php-console\php-console\src\PhpConsole\Connector.php:165
+Stack trace:
+#0 C:\OSPanel\domains\stanki\wp-content\plugins\wp-php-console\vendor\php-console\php-console\src\PhpConsole\Connector.php(121): PhpConsole\Connector->initServerCookie()
+#1 C:\OSPanel\domains\stanki\wp-content\plugins\wp-php-console\vendor\php-console\php-console\src\PhpConsole\Connector.php(97): PhpConsole\Connector->initConnection()
+#2 C:\OSPanel\domains\stanki\wp-content\plugins\wp-php-console\vendor\php-console\php-console\src\PhpConsole\Connector.php(68): PhpConsole\Connector->__construct()
+#3 C:\OSPanel\domains\stanki\wp-content\plugins\wp-php-console\includes\class-wp-php-console.php(145): PhpConsole\Connector::getInstance()
+#4 [internal function]: WP_PHP_Console\Plugin->connect('')
+#5 C:\OSPanel\domains\stanki\wp-includes\class-wp-hook.php(286): call_user_func_array(Array, Array) в C:\OSPanel\domains\stanki\wp-content\plugins\wp-php-console\vendor\php-console\php-console\src\PhpConsole\Connector.php на строке 165
+
+2019-03-13T19:58:49+00:00 CRITICAL Uncaught exception 'Exception' with message 'Unable to set PHP Console server cookie' in C:\OSPanel\domains\stanki\wp-content\plugins\wp-php-console\vendor\php-console\php-console\src\PhpConsole\Connector.php:165
+Stack trace:
+#0 C:\OSPanel\domains\stanki\wp-content\plugins\wp-php-console\vendor\php-console\php-console\src\PhpConsole\Connector.php(121): PhpConsole\Connector->initServerCookie()
+#1 C:\OSPanel\domains\stanki\wp-content\plugins\wp-php-console\vendor\php-console\php-console\src\PhpConsole\Connector.php(97): PhpConsole\Connector->initConnection()
+#2 C:\OSPanel\domains\stanki\wp-content\plugins\wp-php-console\vendor\php-console\php-console\src\PhpConsole\Connector.php(68): PhpConsole\Connector->__construct()
+#3 C:\OSPanel\domains\stanki\wp-content\plugins\wp-php-console\includes\class-wp-php-console.php(145): PhpConsole\Connector::getInstance()
+#4 [internal function]: WP_PHP_Console\Plugin->connect('')
+#5 C:\OSPanel\domains\stanki\wp-includes\class-wp-hook.php(286): call_user_func_array(Array, Array) в C:\OSPanel\domains\stanki\wp-content\plugins\wp-php-console\vendor\php-console\php-console\src\PhpConsole\Connector.php на строке 165
+

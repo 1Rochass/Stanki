@@ -1,0 +1,36 @@
+2019-03-15T14:03:50+00:00 CRITICAL Call to a member function have_posts() on a non-object в C:\OSPanel\domains\stanki\wp-content\themes\Stanki\page.php на строке 33
+
+2019-03-15T14:06:16+00:00 CRITICAL syntax error, unexpected '$list' (T_VARIABLE) в C:\OSPanel\domains\stanki\wp-content\themes\Stanki\page.php на строке 20
+
+2019-03-15T14:06:49+00:00 CRITICAL syntax error, unexpected '$list' (T_VARIABLE) в C:\OSPanel\domains\stanki\wp-content\themes\Stanki\page.php на строке 20
+
+2019-03-15T14:16:55+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) в C:\OSPanel\domains\stanki\wp-content\themes\Stanki\page.php на строке 24
+
+2019-03-15T14:17:01+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) в C:\OSPanel\domains\stanki\wp-content\themes\Stanki\page.php на строке 24
+
+2019-03-15T14:17:31+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) в C:\OSPanel\domains\stanki\wp-content\themes\Stanki\page.php на строке 24
+
+2019-03-15T15:07:39+00:00 CRITICAL Cannot use object of type stdClass as array в C:\OSPanel\domains\stanki\wp-content\themes\Stanki\page.php на строке 28
+
+2019-03-15T15:07:40+00:00 CRITICAL Cannot use object of type stdClass as array в C:\OSPanel\domains\stanki\wp-content\themes\Stanki\page.php на строке 28
+
+2019-03-15T15:08:34+00:00 CRITICAL Cannot use object of type stdClass as array в C:\OSPanel\domains\stanki\wp-content\themes\Stanki\page.php на строке 28
+
+2019-03-15T15:17:25+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) в C:\OSPanel\domains\stanki\wp-content\themes\Stanki\page.php на строке 40
+
+2019-03-15T15:17:36+00:00 CRITICAL Cannot use object of type stdClass as array в C:\OSPanel\domains\stanki\wp-content\themes\Stanki\page.php на строке 30
+
+2019-03-15T15:17:38+00:00 CRITICAL Cannot use object of type stdClass as array в C:\OSPanel\domains\stanki\wp-content\themes\Stanki\page.php на строке 30
+
+2019-03-15T15:18:49+00:00 CRITICAL Cannot use object of type stdClass as array в C:\OSPanel\domains\stanki\wp-content\themes\Stanki\page.php на строке 31
+
+2019-03-15T15:20:12+00:00 CRITICAL syntax error, unexpected '>' в C:\OSPanel\domains\stanki\wp-content\themes\Stanki\page.php на строке 30
+
+2019-03-15T15:21:10+00:00 CRITICAL Cannot use object of type stdClass as array в C:\OSPanel\domains\stanki\wp-content\themes\Stanki\page.php на строке 30
+
+2019-03-15T15:21:12+00:00 CRITICAL Cannot use object of type stdClass as array в C:\OSPanel\domains\stanki\wp-content\themes\Stanki\page.php на строке 30
+
+2019-03-15T15:21:43+00:00 CRITICAL syntax error, unexpected '>' в C:\OSPanel\domains\stanki\wp-content\themes\Stanki\page.php на строке 30
+
+2019-03-15T15:24:06+00:00 CRITICAL Cannot use object of type stdClass as array в C:\OSPanel\domains\stanki\wp-content\themes\Stanki\page.php на строке 32
+
